@@ -1,0 +1,71 @@
+'''
+Escreva uma função que, dados dois números inteiros positivos, calcule e retorne o
+Mínimo Múltiplo Comum (MMC) entre os dois. Escreva também uma função que, dada
+uma lista de três ou mais números inteiros positivos, calcule e retorne o Mínimo
+Múltiplo Comum (MMC) entre eles. A seguir, escreva um programa para testar essas
+funções.
+'''
+
+def mmcDoisNumeros(x,y):
+
+    if x > y:
+        maior = x
+
+    else:
+        maior = y
+
+    while True:
+
+        if maior % x == 0 and maior % y == 0:
+            return maior
+        
+        else:
+            maior += 1
+
+
+def listar():
+
+    lst = []
+    qnt = 
+
+    while qnt <= 0:
+        print("ERRO! Insira um valor maior do que 0.")
+        qnt = validar_entrada("Quantidade de elementos: ")
+
+    for i in range(qnt):
+        valor = validar_entrada("Insira um valor: ")
+        lst.append(valor)
+
+    fator = lst[0]
+
+    for i in lst[1:]:
+        fator = duplo(fator, i)
+
+    return fator
+    
+
+def menu():
+
+    print("Qual operação deseja relizar")
+    print("[1] MMC entre 2 números \n[2] MMC dos valores de uma lista com 3 ou mais elementos\n :")
+    opcao = input('Escolha a opção: ')
+
+    # valida a entrada do usuário.
+    if opcao != '1' or opcao != '2':
+        return True
+    
+    else:
+        return opcao
+
+    
+def main():
+
+    print("Calculos de MMC")
+    print("-"*80)
+
+    opcao = menu()
+
+    if menu():
+        return print('Entrada inválida! \nSelecione uma das opções disponíveis.')
+    
+main()
