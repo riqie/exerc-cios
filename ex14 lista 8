@@ -3,7 +3,7 @@ Escreva uma função que, dados dois números inteiros positivos, calcule e reto
 Mínimo Múltiplo Comum (MMC) entre os dois. Escreva também uma função que, dada
 uma lista de três ou mais números inteiros positivos, calcule e retorne o Mínimo
 Múltiplo Comum (MMC) entre eles. A seguir, escreva um programa para testar essas
-funções.
+funções. 1
 '''
 
 def mmcDoisNumeros(x,y):
